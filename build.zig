@@ -27,7 +27,7 @@ pub fn build(b: *std.build.Builder) void {
     run_step.dependOn(&run.step);
 
     const unit_tests = b.addTest(.{
-        .root_source_file = .{ .path = "src/main.zig" },
+        .root_source_file = .{ .path = "src/tests.zig" },
         .target = target,
         .optimize = optimize,
     });
